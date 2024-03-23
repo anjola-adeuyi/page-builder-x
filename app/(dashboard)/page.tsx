@@ -16,7 +16,7 @@ import Link from 'next/link';
 import { BiRightArrowAlt } from 'react-icons/bi';
 import { FaEdit } from 'react-icons/fa';
 
-export default function Home() {
+function Home() {
   return (
     <div className="container pt-4">
       <Suspense fallback={<StatsCards loading={true} />}>
@@ -204,3 +204,5 @@ function FormCard({ form }: { form: Form }) {
     </Card>
   );
 }
+
+export default Home;
